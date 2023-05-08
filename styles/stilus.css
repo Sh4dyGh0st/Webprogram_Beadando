@@ -1,0 +1,109 @@
+html
+{
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px 10px;
+    
+}
+
+header {
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px;
+    Text-align:center;
+}
+
+h1 {
+    text-align:center;
+    width:800px;
+margin: 0 auto
+}
+h2 {
+    text-align:center;
+    width:800px;
+margin: 0 auto
+}
+
+header img {
+    float: left;
+    margin: 0px 10px 0px 5px;
+    width: 12em;
+    height: auto;
+    
+}
+
+div#wrapper {
+    margin: 10px;
+}
+
+
+nav {
+    margin: 0px 10px 0px 0px;
+    top: 0px;
+    border-radius: 10px;
+    background-color: #fc8a08;
+
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 15px 0px;
+}
+
+nav ul li {
+    padding: 0px 15px;;
+}
+
+nav ul li.active {
+    border: 2px solid rgb(255, 145, 1);
+    border-radius: 10px;
+
+}
+
+nav ul a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+div#content {
+    display: table-cell;
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+div#content img{
+    float: right;
+    width: 20em;
+    height: auto;
+    margin: 0 0 15px 15px;
+    padding: 3px;
+    
+}
+
+footer {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px 20px;
+    background-color: #000000;
+    color: antiquewhite;
+}
+
+footer img {
+    float: right;
+    margin: -125px 10px 10px 10px;
+    width: 9em;
+    height: auto;
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+  .svg {
+float:right;
+margin: -15px;
+}
