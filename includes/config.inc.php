@@ -21,6 +21,12 @@ $lablec = array(
 $oldalak = array(
 	'/' => array('fajl' => 'fooldal', 'szoveg' => 'Főoldal', 'menun' => array(1,1)),
 	'bemutatkozas' => array('fajl' => 'bemutatkozas', 'szoveg' => 'Bemutatkozás', 'menun' => array(1,1)),
-	
-
+    'kepfeltoltes' => array('fajl' => 'kepfeltoltes', 'szoveg' => 'Képfeltöltés', 'menun' => array(1,1)),
 );
+
+$MAPPA = './kepek/';
+$TIPUSOK = array ('.jpg', '.png');
+$MEDIATIPUSOK = array('image/jpeg', 'image/png');
+$DATUMFORMA = "Y.m.d. H:i";
+$MAXMERET = 500*1024;
+?>
