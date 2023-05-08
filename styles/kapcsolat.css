@@ -1,0 +1,20 @@
+label {
+    line-height: 30px; 
+    }
+label input, label textarea {
+    position: relative; 
+    left: 10px;
+    float: right; 
+    border: 0,5px rgb(0, 0, 0) solid; 
+    padding: 2px; 
+    }
+textarea {
+    width: 350px; 
+    }
+input[type="submit"] {
+    float: right;
+    clear: both;
+    }
+button {
+    float: right; 
+    }

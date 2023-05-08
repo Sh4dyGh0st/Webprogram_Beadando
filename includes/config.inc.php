@@ -22,6 +22,8 @@ $oldalak = array(
 	'/' => array('fajl' => 'fooldal', 'szoveg' => 'Főoldal', 'menun' => array(1,1)),
 	'bemutatkozas' => array('fajl' => 'bemutatkozas', 'szoveg' => 'Bemutatkozás', 'menun' => array(1,1)),
     'kepfeltoltes' => array('fajl' => 'kepfeltoltes', 'szoveg' => 'Képfeltöltés', 'menun' => array(1,1)),
+    'kapcsolat' => array('fajl' => 'kapcsolat', 'szoveg' => 'Kapcsolat', 'menun' => array(1,1)),
+    'email' => array('fajl' => 'email', 'szoveg' => 'E-mail adatok', 'menun' => array(1,1)),
 );
 
 $MAPPA = './kepek/';
