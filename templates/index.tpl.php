@@ -28,12 +28,13 @@
 <text fill ="#ffffff"font-size ="45" font-family="Verdana" x="50" y="86">MTT</text>
 Sajnos a böngésződ nem támogatja az SVG-t.
 </svg>
-	<!-- Logo+Cím és Mottó -->
+	<!-- Logo+Cím és Mottó, Session bejelentkezve -->
 		<img src="./images/<?=$fejlec['kepforras']?>" alt="<?=$fejlec['kepalt']?>">
 		
 		<h1><?= $fejlec['cim'] ?></h1>
 		
 		<?php if (isset($fejlec['motto'])) { ?><h2><?= $fejlec['motto'] ?></h2><?php } ?>
+		<?php if(isset($_SESSION['login'])) { ?>Bejelentkezve: <strong><?= $_SESSION['csn']." ".$_SESSION['un']." (".$_SESSION['login'].")" ?></strong><?php } ?>
 </header>
 
 <!-- Menü-->
