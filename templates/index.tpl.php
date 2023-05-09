@@ -17,7 +17,7 @@
 <header >
 
 <!-- SVG ICON -->
-<svg class= "svg" height ="120" width ="320" viewBox="20 20 100 100">	
+<svg height ="135" width ="500" class= "svg">	
 <defs>
 <linearGradient id ="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
 <stop offset ="0%" style="stop-color:rgb(255, 145, 1);stop-opacity:1"/>
@@ -71,12 +71,12 @@ Sajnos a böngésződ nem támogatja az SVG-t.
 		
 <!-- Script -->
 <script class="local" type="text/javascript">
-if(sessionStorage.hits){
-	sessionStorage.hits=Number(sessionStorage.hits) +1;
+if(localStorage.hits){
+localStorage.hits=Number(localStorage.hits) +1;
 }else {
-	sessionStorage.hits=1;
+localStorage.hits=1;
 }
-document.write("Ön ennyiszer járt az oldalon:" + sessionStorage.hits);
+document.write("Ön ennyiszer járt az oldalon :" + localStorage.hits);
 </script>
 </ul>
 

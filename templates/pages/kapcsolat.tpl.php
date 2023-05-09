@@ -9,8 +9,6 @@
 <form name="kapcsolat" action="?oldal=email" onsubmit="return ellenoriz();" method="post">
 
 <div>
-<label><input type="text" id="nev" name="nev" size="20" maxlength="40"> Név (minimum 5 karakter): </label>
-<br/>
 <label><input type="text" id="email" name="email" size="30" maxlength="40"> E-mail (kötelező): </label>
 <br/>
 <label> <textarea id="szoveg" name="szoveg" cols="40" rows="10"></textarea> Üzenet (kötelező): </label>

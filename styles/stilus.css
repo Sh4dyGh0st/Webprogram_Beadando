@@ -105,9 +105,15 @@ footer img {
   }
 
   .svg {
-float:right;
-margin: -15px;
-}
+    max-width: 100%;
+    height: auto;
+    float: right;
+  }
+  @media (max-width: 500px) {
+    .svg {
+      width: 80%;
+    }
+  }
 
 video {
     max-width: 100%;

@@ -8,17 +8,7 @@ window.onload = function() {
     function ellenoriz() { 
     var rendben = true; 
     var fokusz = null; 
-    //Név ellenőrzés
-    var szoveg = document.getElementById("szoveg");
-    if (szoveg) { 
-    if (szoveg.value.length==0) { 
-    rendben = false;
-    szoveg.style.background = '#f99'; 
-    fokusz = szoveg; 
-    } else {
-    szoveg.style.background = '#9f9'; 
-    }
-    }
+    
     //E-mail cím ellenőrzés
     var email = document.getElementById("email");
     if (email) { 

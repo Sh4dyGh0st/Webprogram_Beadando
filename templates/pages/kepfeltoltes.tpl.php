@@ -2,7 +2,7 @@
 
 <body>
 <div id="galeria">
-<h3>Galéria</h3>
+<h1>Galéria</h1>
 <?php
 arsort($kepek);
 foreach($kepek as $fajl => $datum)
@@ -38,9 +38,8 @@ foreach($kepek as $fajl => $datum)
          
         <input type="submit" name="kuld">
       </form>    
-<?php } ?>    
+<?php } ?>
 </body>
-
 
 
 
