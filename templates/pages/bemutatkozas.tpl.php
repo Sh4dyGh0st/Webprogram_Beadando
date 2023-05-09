@@ -7,7 +7,7 @@ Próbálja ki, nem fogja megbánni.</p>
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/KmArXr8LVto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br/>
 <h3> Egyedi gépjárművek is vannak:</h3>
-<video width="420" height="315" controls>
+<video width="25%" height="auto" controls>
 <source src="video/kamion.mp4" type="video/mp4">
 </video> </br>
 
