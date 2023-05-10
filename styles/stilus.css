@@ -1,9 +1,7 @@
-html
-{
+html {
     border-radius: 20px;
     margin: 20px;
     padding: 10px 10px;
-    
 }
 
 header {
@@ -11,41 +9,32 @@ header {
     background-color: rgb(255, 255, 255);
     padding: 10px;
     margin: 10px;
-    Text-align:center;
+    text-align:center;
 }
 
-h1 {
-    text-align:center;
-    width:800px;
-margin: 0 auto
-}
+h1,
 h2 {
     text-align:center;
-    width:800px;
-margin: 0 auto
+    margin: 0 auto;
+    max-width: 90%;
 }
-
 
 header img {
     float: left;
     margin: 0px 10px 0px 5px;
     width: 12em;
     height: auto;
-    
 }
 
 div#wrapper {
     margin: 10px;
 }
 
-
 nav {
     margin: 0px 10px 0px 0px;
     top: 0px;
     border-radius: 10px;
     background-color: #fc8a08;
-
-    
 }
 
 nav ul {
@@ -55,13 +44,12 @@ nav ul {
 }
 
 nav ul li {
-    padding: 0px 15px;;
+    padding: 0px 15px;
 }
 
 nav ul li.active {
     border: 2px solid rgb(255, 145, 1);
     border-radius: 10px;
-
 }
 
 nav ul a {
@@ -76,13 +64,13 @@ div#content {
     padding: 15px;
 }
 
-div#content img{
+div#content img {
     float: right;
-    width: 20em;
+    width: 100%;
+    max-width: 20em;
     height: auto;
-    margin: 15px 15px 15px 15px;
+    margin: 15px 0 15px 0;
     border: 3px solid rgb(255, 136, 0);
-    
 }
 
 footer {
@@ -102,24 +90,24 @@ footer img {
 
 .selector-for-some-widget {
     box-sizing: content-box;
-  }
+}
 
-  .svg {
-    max-width: 100%;
-    height: auto;
-    float: right;
-  }
-  @media (max-width: 500px) {
-    .svg {
-      width: 80%;
+
+
+@media (max-width: 500px) {
+    h1,
+    h2 {
+        font-size: 1.2em;
     }
-  }
-
-video {
-    max-width: 100%;
-    height: auto;
-  }
-
-  div#galeria {margin: 0 auto; width: 620px;}
-        div.kep { display: inline-block; }
-        div.kep img { width: 200px; }
+    div#galeria {
+        width: 90%;
+    }
+    div.kep {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    div.kep img {
+        width: 100%;
+    }
+}
