@@ -34,7 +34,7 @@ nav {
     margin: 0px 10px 0px 0px;
     top: 0px;
     border-radius: 10px;
-    background-color: #fc8a08;
+    background-color: #000000;
 }
 
 nav ul {
@@ -87,6 +87,7 @@ footer img {
     width: 9em;
     height: auto;
 }
+
 
 @media (max-width: 500px) {
     h1,
