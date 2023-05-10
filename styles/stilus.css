@@ -88,12 +88,6 @@ footer img {
     height: auto;
 }
 
-.selector-for-some-widget {
-    box-sizing: content-box;
-}
-
-
-
 @media (max-width: 500px) {
     h1,
     h2 {
