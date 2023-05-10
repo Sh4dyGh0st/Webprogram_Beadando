@@ -12,7 +12,7 @@ $fejlec = array(
 
 $lablec = array(
     'copyright' => 'Copyright '.date("Y").'.',
-    'ceg' => 'My Truck  Trucker Kft.' ,
+    'ceg' => 'MyTruck  Trucker Kft.' ,
     'kepforras' => 'bg2.jpg',
     'kepalt' => 'bg2',
 );
