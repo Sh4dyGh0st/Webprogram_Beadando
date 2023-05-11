@@ -22,14 +22,14 @@ window.onload = function() {
     }
     }
     //Üzenetellenőrzés
-    var nev = document.getElementById("nev");
-    if (nev) {
-    if (nev.value.length<5) { 
+    var nev = document.getElementById("szoveg");
+    if (szoveg) {
+    if (szoveg.value.length<5) { 
     rendben = false;
-    nev.style.background = '#f99';
-    fokusz = nev;
+    szoveg.style.background = '#f99';
+    fokusz = szoveg;
     } else {
-    nev.style.background = '#9f9';
+    szoveg.style.background = '#9f9';
     }
     }
     if (fokusz) { 

@@ -1,19 +1,22 @@
 table {
-    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: large;
+    border: 1px solid black;
 }
-th, td {
-    padding: 10px 50px 10px 5px;
-    text-align: left;
-    font-family: sans-serif;
-    font-size: small;
-}
-th {
-    color: #1E459E;
-    background-color: #b9c9fe;
-    border-top: 5px solid #AABCFE;
-}
+
 td {
-    color: #7274a5;
-    background-color: #d0dafd;
-    border-top: 3px solid #FFFFFF;
+    background-color: #e7e7e7;
+    border: 1px solid black;
+}
+
+th,
+td {
+    font-weight: bold;
+    border: 1px solid black;
+    padding: auto;
+    text-align: center;
+}
+
+td {
+    font-weight: lighter;
 }

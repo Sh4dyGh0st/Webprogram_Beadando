@@ -22,10 +22,10 @@ foreach($kepek as $fajl => $datum)
 <?php if(isset($_SESSION['login'])) { ?>
 <h1>Feltöltés a galériába:</h1>
 <?php
-    if (!empty($uzenet))
+    if (!empty($szoveg))
     {
         echo '<ul>';
-        foreach($uzenet as $u)
+        foreach($szoveg as $u)
             echo "<li>$u</li>";
         echo '</ul>';
     }
