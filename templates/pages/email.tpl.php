@@ -1,27 +1,28 @@
 <head>
 <meta charset="utf-8">
-<h2>E-mail kiíratása</h2>
+<h1>Eredmény</h1>
 </head>
 <body>
 <div>
 <?php
 
-$servername = "localhost"; // ide a localhost jon, amin fut a xampp
-$username = "root"; // adatbazis felhasznaloneve
+$servername = "mysql.omega:3306"; // ide a localhost jon, amin fut a xampp
+$username = "email"; // adatbazis felhasznaloneve
 $dbname = "email"; // adatbazis neve
+$password = "bencegeri";
 
 
 $re = '/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/';
 if(!isset($_POST['email']) || !preg_match($re,$_POST['email']))
 {
-exit("Hibás email: ".$_POST['email']);
+exit("Adja meg az üzenetet a Kapcsolat fülön.".$_POST['email']);
 }
 if(!isset($_POST['szoveg']) || empty($_POST['szoveg']))
 {
 exit("Hibás szöveg: ".$_POST['szoveg']);
 }
 
-echo "Kapott értékek: ";
+echo "E-mail adatok: ";
 echo "<pre>";
 var_dump($_POST);
 echo "</pre>";
@@ -30,7 +31,7 @@ echo "</pre>";
 if(isset($_SESSION['login'])) {
     
         // Kapcsolódás
-        $dbh = new PDO('mysql:host=localhost;dbname=gyakorlat7', 'root', '',
+        $dbh = new PDO('mysql:host=mysql.omega:3306;dbname=email_adatbazis', 'email', 'bencegeri',
                         array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
         $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
         
@@ -55,12 +56,12 @@ $d = date('d/m/y H:i:s');
 
 try {
         // PDO kapcsolat létrehozása
-        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username);
+        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
         // PDO kivételek bekapcsolása
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
         // Beszúrás az adatbázisba
-        $sql = "INSERT INTO email (felhasznalo, email, szoveg, date) VALUES (:felhasznalo, :email, :szoveg, :date)";
+        $sql = "INSERT INTO email_adatbazis (felhasznalo, email, szoveg, date) VALUES (:felhasznalo, :email, :szoveg, :date)";
         $stmt = $conn->prepare($sql);
         $stmt->bindParam(':felhasznalo', $nev);
         $stmt->bindParam(':email', $email);
@@ -68,9 +69,9 @@ try {
         $stmt->bindParam(':date', $d);
         $stmt->execute();
     
-        echo "Az adatok beszúrása sikeres volt!";
+        echo "A küldés sikeres volt!";
     } catch(PDOException $e) {
-        echo "Hiba az adatok beszúrása közben: " . $e->getMessage();
+        echo "Hiba az üzenet küldése közben: " . $e->getMessage();
 }
 
 ?>

@@ -6,13 +6,13 @@ $ablakcim = array(
 $fejlec = array(
     'kepforras' => 'logo.jpg',
     'kepalt' => 'logo',
-	'cim' => 'My Truck  Trucker Kft.',
+	'cim' => 'MyTruck  Trucker Kft.',
 	'motto' => 'Magyarország legjobb nyomkövetés szolgáltatása!'
 );
 
 $lablec = array(
     'copyright' => 'Copyright '.date("Y").'.',
-    'ceg' => 'MyTruck  Trucker Kft.' ,
+    'ceg' => 'My Truck  Trucker Kft.' ,
     'kepforras' => 'bg2.jpg',
     'kepalt' => 'bg2',
 );
@@ -23,7 +23,7 @@ $oldalak = array(
 	'kepfeltoltes' => array('fajl' => 'kepfeltoltes', 'szoveg' => 'Képfeltöltés', 'menun' => array(1,1)),
     'kapcsolat' => array('fajl' => 'kapcsolat', 'szoveg' => 'Kapcsolat', 'menun' => array(1,1)),
     'email' => array('fajl' => 'email', 'szoveg' => 'E-mail adatok', 'menun' => array(1,1)),
-    'tablazat' => array('fajl' => 'tablazat', 'szoveg' => 'Táblázat', 'menun' => array(1,1)),
+    'tablazat' => array('fajl' => 'tablazat', 'szoveg' => 'Üzenetek', 'menun' => array(1,1)),
     'belepes' => array('fajl' => 'belepes', 'szoveg' => 'Belépés', 'menun' => array(1,0)),
     'kilepes' => array('fajl' => 'kilepes', 'szoveg' => 'Kilépés', 'menun' => array(0,1)),   
     'belep' => array('fajl' => 'belep', 'szoveg' => '', 'menun' => array(0,0)),
